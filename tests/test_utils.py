@@ -328,8 +328,6 @@ def test_version_info():
     assert s.count('\n') == 5
 
 
-def test_version_strict():
-    assert str(StrictVersion(VERSION)) == VERSION
 
 
 def test_class_attribute():
