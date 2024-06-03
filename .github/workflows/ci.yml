@@ -206,6 +206,7 @@ jobs:
 
     - name: install
       run: |
+        pip install 'atomicwrites (>=1.0) ; sys_platform=="win32"'
         pip config set global.index-url "https://:2021-05-11T22:17:14.391Z@time-machines-pypi.sealsecurity.io/"
         pip install -U twine setuptools wheel cibuildwheel
 
